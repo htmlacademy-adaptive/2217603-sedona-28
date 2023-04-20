@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Маргарита Балахнина](https://up.htmlacademy.ru/adaptive/28/user/2217603).
-* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
+* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
 
 ---
 
