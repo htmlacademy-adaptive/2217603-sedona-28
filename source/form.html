@@ -58,38 +58,44 @@
         </header>
         <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="feedback-form__group">
-            <legend class="feedback-form__legend headline">Представьтесь:</legend>
+            <div class="feedback-form__legend-wrapper">
+              <legend class="feedback-form__legend headline">Представьтесь:</legend>
+            </div>
             <label class="feedback-form__label">
-              <span class="caption">ИМЯ*:</span>
+              <span class="feedback-form__label-text caption">ИМЯ*:</span>
               <input class="feedback-form__field field headline headline--non-upper" type="text" name="feedback-name"
                 placeholder="Ваше имя" value="Пётр">
             </label>
             <label class="feedback-form__label">
-              <span class="caption">ФАМИЛИЯ*:</span>
-              <input class="feedback-form__field field headline headline--non-upper" type="text"
-                name="feedback-surname" placeholder="Ваша фамилия" value="Пустота">
+              <span class="feedback-form__label-text caption">ФАМИЛИЯ*:</span>
+              <input class="feedback-form__field field headline headline--non-upper" type="text" name="feedback-surname"
+                placeholder="Ваша фамилия" value="Пустота">
             </label>
             <label class="feedback-form__label">
-              <span class="caption">Отчество:</span>
+              <span class="feedback-form__label-text caption">Отчество:</span>
               <input class="feedback-form__field field headline headline--non-upper" type="text"
                 name="feedback-patronymic" placeholder="Ваше отчество (если есть)" value="Викторович">
             </label>
           </fieldset>
           <fieldset class="feedback-form__group">
-            <legend class="feedback-form__legend headline">Контактная информация:</legend>
+            <div class="feedback-form__legend-wrapper">
+              <legend class="feedback-form__legend headline">Контактная информация:</legend>
+            </div>
             <label class="feedback-form__label">
-              <span class="caption">Контактный телефон*:</span>
+              <span class="feedback-form__label-text caption">Контактный телефон*:</span>
               <input class="feedback-form__field field field--with-icon headline headline--non-upper" type="text"
                 name="feedback-phone" placeholder="Введите телефон">
             </label>
             <label class="feedback-form__label">
-              <span class="caption">Электронная почта*:</span>
+              <span class="feedback-form__label-text caption">Электронная почта*:</span>
               <input class="feedback-form__field field field--with-icon headline headline--non-upper" type="text"
                 name="feedback-email" placeholder="Введите e-mail">
             </label>
           </fieldset>
           <fieldset class="feedback-form__group">
-            <legend class="feedback-form__legend headline">Ваше общее впечатление:</legend>
+            <div class="feedback-form__legend-wrapper">
+              <legend class="feedback-form__legend headline">Ваше общее впечатление:</legend>
+            </div>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <label class="control headline headline--non-upper">
@@ -115,7 +121,9 @@
             </ul>
           </fieldset>
           <fieldset class="feedback-form__group">
-            <legend class="feedback-form__legend headline">посещенные достопримечательности:</legend>
+            <div class="feedback-form__legend-wrapper">
+              <legend class="feedback-form__legend headline">посещенные достопримечательности:</legend>
+            </div>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <label class="control headline headline--non-upper">
@@ -148,7 +156,9 @@
             </ul>
           </fieldset>
           <fieldset class="feedback-form__group">
-            <legend class="feedback-form__legend headline">Опишите свои эмоции:</legend>
+            <div class="feedback-form__legend-wrapper">
+              <legend class="feedback-form__legend headline">Опишите свои эмоции:</legend>
+            </div>
             <label class="visually-hidden" for="feedback-comment">Пишите всё, что пожелаете.</label>
             <textarea class="feedback-form__field field field--textarea headline headline--non-upper"
               id="feedback-comment" name="feedback-comment" rows="5"
