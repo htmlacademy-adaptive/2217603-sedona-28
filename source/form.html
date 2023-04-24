@@ -99,23 +99,23 @@
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <label class="control headline headline--non-upper">
-                  <input class="visually-hidden control-input" type="radio" name="impression" value="positive" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Скорее положительное</span>
+                  <input class="visually-hidden control__input" type="radio" name="impression" value="positive" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Скорее положительное</span>
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label class="control headline headline--non-upper">
-                  <input class="visually-hidden control-input" type="radio" name="impression" value="negative">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Скорее отрицательное</span>
+                  <input class="visually-hidden control__input" type="radio" name="impression" value="negative">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label class="control headline headline--non-upper">
-                  <input class="visually-hidden control-input" type="radio" name="impression" value="difficulty">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Затрудняюсь ответить</span>
+                  <input class="visually-hidden control__input" type="radio" name="impression" value="difficulty">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Затрудняюсь ответить</span>
                 </label>
               </li>
             </ul>
@@ -127,30 +127,30 @@
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <label class="control headline headline--non-upper">
-                  <input class="visually-hidden control-input" type="checkbox" name="devil's-bridge" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Мост Дьявола</span>
+                  <input class="visually-hidden control__input" type="checkbox" name="devil's-bridge" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Мост Дьявола</span>
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label class="control headline headline--non-upper">
-                  <input class="visually-hidden control-input" type="checkbox" name="mount-bell" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Гора-Колокол</span>
+                  <input class="visually-hidden control__input" type="checkbox" name="mount-bell" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Гора-Колокол</span>
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label class="control headline headline--non-upper">
-                  <input class="visually-hidden control-input" type="checkbox" name="slide-park" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Слайд-парк</span>
+                  <input class="visually-hidden control__input" type="checkbox" name="slide-park" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Слайд-парк</span>
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label class="control headline headline--non-upper">
-                  <input class="visually-hidden control-input" type="checkbox" name="red-rocks">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Красные скалы</span>
+                  <input class="visually-hidden control__input" type="checkbox" name="red-rocks">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Красные скалы</span>
                 </label>
               </li>
             </ul>
@@ -161,20 +161,22 @@
             </div>
             <label class="visually-hidden" for="feedback-comment">Пишите всё, что пожелаете.</label>
             <textarea class="feedback-form__field field field--textarea headline headline--non-upper"
-              id="feedback-comment" name="feedback-comment" rows="5"
-              placeholder="Опишите подробно все свои восторги"></textarea>
+              id="feedback-comment" name="feedback-comment" rows="5" placeholder="Опишите подробно все свои восторги">
+            </textarea>
           </fieldset>
-          <button class="feedback-form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-          <span class="feedback-form__signature caption caption--signature">* — обязательные поля</span>
+          <div class="feedback-form__button-wrapper">
+            <button class="feedback-form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+            <span class="feedback-form__signature caption caption--signature">* — обязательные поля</span>
+          </div>
         </form>
       </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="main-footer__hashtag hashtag">
+        <div class="main-footer__component hashtag">
           <p class="hashtag__text headline headline--major" lang="en">#VISITSEDONA</p>
         </div>
-        <div class="main-footer__social social">
+        <div class="main-footer__component social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy">
@@ -218,7 +220,7 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright">
+        <div class="main-footer__component copyright">
           <p class="copyright__text caption">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__link-icon" aria-hidden="true" focusable="false" width="29" height="35" fill="none"
@@ -238,7 +240,7 @@
       <section class="modal__content">
         <h2 class="modal__title headline">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
         <p class="modal__text caption">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal__button button button--small-text">OK</button>
+        <button class="modal__button modal__button--short button button--small-text">OK</button>
       </section>
     </div>
     <div class="modal-container__interior modal modal--success">
@@ -246,8 +248,10 @@
         <h2 class="modal__title headline">Ваш отзыв отправлен!</h2>
         <p class="modal__text caption">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
           опубликуем его на сайте.</p>
-        <button class="modal__button button button--small-text">Закрыть окно</button>
       </section>
+      <div class="modal__footer">
+        <button class="modal__button button button--small-text">Закрыть окно</button>
+      </div>
     </div>
   </div>
 </body>
