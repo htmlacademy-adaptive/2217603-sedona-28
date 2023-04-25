@@ -1,4 +1,4 @@
-.modal-container__interior {
+.modal-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -15,6 +15,8 @@
   margin: auto;
   background-color: @color-white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  text-align: center;
+  display: none;
 
   &--failure {
     padding: 45px 42px 35px 41px;
@@ -29,17 +31,15 @@
   }
 }
 
-.modal__content {
-  padding: 45px 34px 34px 37px;
+.modal__title {
+  margin: 0;
+  margin-bottom: 25px;
 }
 
-// .modal__title {
-
-// }
-
-// .modal__text {
-
-// }
+.modal__text {
+  margin: 0;
+  margin-bottom: 28px;
+}
 
 .modal__button {
   max-width: 280px;
@@ -47,6 +47,10 @@
   &--short {
     max-width: 180px;
   }
+}
+
+.modal__wrapper {
+  padding: 44px 39px 20px 37px;
 }
 
 .modal__footer {
