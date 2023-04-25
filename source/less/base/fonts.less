@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+
+.headline {
+  .font(700; 18px; 26px);
+  text-transform: uppercase;
+
+  &--major {
+    .font(700; 21px; 26px);
+  }
+
+  &--non-upper {
+    text-transform: none;
+  }
+}
+
+.caption {
+  .font(400; 14px; 21px);
+  text-transform: uppercase;
+  color: @color-dark;
+
+  &--signature {
+    font-size: 12px;
+    opacity: 0.6;
+  }
+
+  &--bold {
+    font-weight: 700;
+    color: @color-black;
+  }
+
+  &--non-upper {
+    text-transform: none;
+  }
+
+  &--contrast {
+    color: inherit;
+  }
+}
