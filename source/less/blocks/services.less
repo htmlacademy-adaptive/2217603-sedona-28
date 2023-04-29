@@ -1,5 +1,5 @@
 .services {
-  padding: 23px 18px 46px;
+  padding: 23px 0 46px;
   text-align: left;
   background-color: @color-white;
   color: @color-black;
@@ -7,10 +7,26 @@
 
 .services__list {
   .list-reset;
+  max-width: 284px;
+  margin: 0 auto;
 }
 
 .services__item {
   padding-left: 47px;
+  background-position: top left;
+  background-repeat: no-repeat;
+
+  &--housing {
+    background-image: url("/img/icons/housing.svg");
+  }
+
+  &--food {
+    background-image: url("/img/icons/food.svg");
+  }
+
+  &--gift {
+    background-image: url("/img/icons/gift.svg");
+  }
 }
 
 .services__item + .services__item {
@@ -19,18 +35,6 @@
 
 .services__title {
   margin: 8px 0 16px;
-
-  &--housing {
-    background-image: url("");
-  }
-
-  &--food {
-    background-image: url("");
-  }
-
-  &--gift {
-    background-image: url("");
-  }
 }
 
 .services__description {
