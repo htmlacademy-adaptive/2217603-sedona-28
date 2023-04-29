@@ -17,32 +17,24 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
+          <span class="visually-hidden">Закрыть меню.</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">
-                <span>Главная</span>
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
-                <span>Фото и видео</span>
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link" title="Вы сейчас здесь">
-                <span>Форма отзыва</span>
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">
-                <span lang="en">HTML ACADEMY</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" title="Вы сейчас здесь">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">
+              <span lang="en">HTML ACADEMY</span>
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main page-main--inner">
@@ -58,9 +50,7 @@
         </header>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="form__group">
-            <div class="form__legend-wrapper">
-              <legend class="form__legend headline">Представьтесь:</legend>
-            </div>
+            <legend class="form__legend headline">Представьтесь:</legend>
             <label class="form__label">
               <span class="form__label-text caption">ИМЯ*:</span>
               <input class="form__field field headline headline--non-upper" type="text" name="feedback-name"
@@ -73,29 +63,25 @@
             </label>
             <label class="form__label">
               <span class="form__label-text caption">Отчество:</span>
-              <input class="form__field field headline headline--non-upper" type="text"
-                name="feedback-patronymic" placeholder="Ваше отчество (если есть)" value="Викторович">
+              <input class="form__field field headline headline--non-upper" type="text" name="feedback-patronymic"
+                placeholder="Ваше отчество (если есть)" value="Викторович">
             </label>
           </fieldset>
           <fieldset class="form__group">
-            <div class="form__legend-wrapper">
-              <legend class="form__legend headline">Контактная информация:</legend>
-            </div>
+            <legend class="form__legend headline">Контактная информация:</legend>
             <label class="form__label form__label--with-icon form__label--with-icon-tel">
               <span class="form__label-text caption">Контактный телефон*:</span>
-              <input class="form__field field headline headline--non-upper" type="tel"
-                name="feedback-phone" placeholder="Введите телефон" required>
+              <input class="form__field field headline headline--non-upper" type="tel" name="feedback-phone"
+                placeholder="Введите телефон" required>
             </label>
             <label class="form__label form__label--with-icon form__label--with-icon-email">
               <span class="form__label-text caption">Электронная почта*:</span>
-              <input class="form__field field headline headline--non-upper" type="email"
-                name="feedback-email" placeholder="Введите e-mail" required>
+              <input class="form__field field headline headline--non-upper" type="email" name="feedback-email"
+                placeholder="Введите e-mail" required>
             </label>
           </fieldset>
           <fieldset class="form__group">
-            <div class="form__legend-wrapper">
-              <legend class="form__legend headline">Ваше общее впечатление:</legend>
-            </div>
+            <legend class="form__legend headline">Ваше общее впечатление:</legend>
             <ul class="form__list">
               <li class="form__item">
                 <label class="control headline headline--non-upper">
@@ -121,9 +107,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group">
-            <div class="form__legend-wrapper">
-              <legend class="form__legend headline">посещенные достопримечательности:</legend>
-            </div>
+            <legend class="form__legend headline">посещенные достопримечательности:</legend>
             <ul class="form__list">
               <li class="form__item">
                 <label class="control headline headline--non-upper">
@@ -156,13 +140,10 @@
             </ul>
           </fieldset>
           <fieldset class="form__group">
-            <div class="form__legend-wrapper">
-              <legend class="form__legend headline">Опишите свои эмоции:</legend>
-            </div>
+            <legend class="form__legend headline">Опишите свои эмоции:</legend>
             <label class="visually-hidden" for="feedback-comment">Пишите всё, что пожелаете.</label>
-            <textarea class="form__field field field--textarea headline headline--non-upper"
-              id="feedback-comment" name="feedback-comment" rows="5"
-              placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="form__field field field--textarea headline headline--non-upper" id="feedback-comment"
+              name="feedback-comment" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="form__button-wrapper">
             <button class="form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
@@ -212,7 +193,7 @@
                   d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z"
                   fill="#fff" />
               </svg>
-              <span class="visually-hidden"> Мы на Ютубе.</span>
+              <span class="visually-hidden">Мы на Ютубе.</span>
             </a>
           </li>
         </ul>
