@@ -1,11 +1,17 @@
 .main-header {
   .font(700; 14px; 21px);
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
   text-transform: uppercase;
+  min-height: 56px;
 }
 
 .main-header__logo {
-  grid-column: 2 / 3;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   margin-bottom: -40px;
 }
+
+// .main-header__nav {
+
+// }
