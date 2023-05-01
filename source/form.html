@@ -17,10 +17,10 @@
         <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--closed" type="button">
           <span class="visually-hidden">Закрыть меню.</span>
         </button>
-        <ul class="main-nav__list site">
+        <ul class="main-nav__list site site--closed">
           <li class="site__item">
             <a class="site__link" href="index.html">Главная</a>
           </li>
@@ -50,38 +50,40 @@
             посещенных вами достопримечательностях</p>
         </header>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="form__group">
-            <legend class="form__legend headline">Представьтесь:</legend>
-            <label class="form__label">
-              <span class="form__label-text caption">ИМЯ*:</span>
-              <input class="form__field field headline headline--non-upper" type="text" name="feedback-name"
-                placeholder="Ваше имя" value="Пётр" required>
-            </label>
-            <label class="form__label">
-              <span class="form__label-text caption">ФАМИЛИЯ*:</span>
-              <input class="form__field field headline headline--non-upper" type="text" name="feedback-surname"
-                placeholder="Ваша фамилия" value="Пустота" required>
-            </label>
-            <label class="form__label">
-              <span class="form__label-text caption">Отчество:</span>
-              <input class="form__field field headline headline--non-upper" type="text" name="feedback-patronymic"
-                placeholder="Ваше отчество (если есть)" value="Викторович">
-            </label>
-          </fieldset>
-          <fieldset class="form__group">
-            <legend class="form__legend headline">Контактная информация:</legend>
-            <label class="form__label form__label--with-icon form__label--with-icon-tel">
-              <span class="form__label-text caption">Контактный телефон*:</span>
-              <input class="form__field field headline headline--non-upper" type="tel" name="feedback-phone"
-                placeholder="Введите телефон" required>
-            </label>
-            <label class="form__label form__label--with-icon form__label--with-icon-email">
-              <span class="form__label-text caption">Электронная почта*:</span>
-              <input class="form__field field headline headline--non-upper" type="email" name="feedback-email"
-                placeholder="Введите e-mail" required>
-            </label>
-          </fieldset>
-          <fieldset class="form__group">
+          <div class="form__group-wrapper">
+            <fieldset class="form__group form__group--introduce">
+              <legend class="form__legend headline">Представьтесь:</legend>
+              <label class="form__label">
+                <span class="form__label-text caption">ИМЯ*:</span>
+                <input class="form__field field headline headline--non-upper" type="text" name="feedback-name"
+                  placeholder="Ваше имя" value="Пётр" required>
+              </label>
+              <label class="form__label">
+                <span class="form__label-text caption">ФАМИЛИЯ*:</span>
+                <input class="form__field field headline headline--non-upper" type="text" name="feedback-surname"
+                  placeholder="Ваша фамилия" value="Пустота" required>
+              </label>
+              <label class="form__label">
+                <span class="form__label-text caption">Отчество:</span>
+                <input class="form__field field headline headline--non-upper" type="text" name="feedback-patronymic"
+                  placeholder="Ваше отчество (если есть)" value="Викторович">
+              </label>
+            </fieldset>
+            <fieldset class="form__group form__group--contact">
+              <legend class="form__legend headline">Контактная информация:</legend>
+              <label class="form__label form__label--with-icon form__label--with-icon-tel">
+                <span class="form__label-text caption">Контактный телефон*:</span>
+                <input class="form__field field headline headline--non-upper" type="tel" name="feedback-phone"
+                  placeholder="Введите телефон" required>
+              </label>
+              <label class="form__label form__label--with-icon form__label--with-icon-email">
+                <span class="form__label-text caption">Электронная почта*:</span>
+                <input class="form__field field headline headline--non-upper" type="email" name="feedback-email"
+                  placeholder="Введите e-mail" required>
+              </label>
+            </fieldset>
+          </div>
+          <fieldset class="form__group form__group--impression">
             <legend class="form__legend headline">Ваше общее впечатление:</legend>
             <ul class="form__list">
               <li class="form__item">
@@ -107,7 +109,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--attraction">
             <legend class="form__legend headline">посещенные достопримечательности:</legend>
             <ul class="form__list">
               <li class="form__item">

@@ -2,19 +2,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // max-width: 320px;
   width: 100%;
   min-height: 389px;
   background-color: @color-dark;
   background-image: url("/img/hero/hero-back-mobile.jpg");
   background-size: cover;
-  // margin: 0 auto;
 
   &--inner {
-    min-height: auto;
-    max-height: 158px;
+    // min-height: auto;
+    min-height: 158px;
     background-size: cover;
     background-position: bottom center;
     padding: 52px 45px 67px;
+
+    @media (min-width: @tablet-width) {
+      min-height: 290px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 301px;
+    }
   }
 }
