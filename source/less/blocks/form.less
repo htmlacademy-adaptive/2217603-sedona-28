@@ -72,15 +72,16 @@
     }
   }
 
-  // &--impression {
-  //   @media (min-width: @tablet-width) {
-  //     flex-direction: row;
-  //   }
-  // }
+  &--impression {
+    @media (min-width: @tablet-width) {
+      padding: 0 36px;
+    }
+  }
 
   &--attraction {
     @media (min-width: @tablet-width) {
       margin-bottom: 42px;
+      padding: 0 84px;
     }
 
     &::before {
@@ -111,6 +112,11 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 16px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   &--with-icon {
     position: relative;
@@ -143,37 +149,73 @@
   }
 }
 
-.form__label + .form__label {
-  margin-top: 16px;
-}
-
 .form__label-text {
   padding-left: 16px;
 }
 
-.form__field {
-  max-width: 430px;
-}
+// .form__field {
+//   max-width: 648px;
+// }
 
 .form__list {
   .list-reset;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
-.form__item + .form__item {
-  margin-top: 16px;
+.form__item {
+  width: 100%;
+  max-width: 280px;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    &:nth-child(2n-1) {
+      margin-right: 16px;
+    }
+
+    &--with-checkbox {
+      max-width: 224px;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .form__button-wrapper {
   padding: 0 20px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .form__button {
-  margin-top: 32px;
-  max-width: 384px;
+  max-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 384px;
+  }
 }
 
 .form__signature {
   align-self: flex-end;
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+  }
 }

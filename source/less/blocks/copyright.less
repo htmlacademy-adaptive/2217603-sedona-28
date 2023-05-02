@@ -1,7 +1,6 @@
 .copyright {
   display: flex;
   max-width: 129px;
-  margin-inline: auto;
   text-align: center;
 }
 
@@ -13,4 +12,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: @color-black;
+
+  &:hover {
+    color: @color-blue;
+  }
+
+  &:active {
+    color: @color-black;
+    opacity: 0.3;
+  }
 }
+// обернуть в ссылку "разработано"
