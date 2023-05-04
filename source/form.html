@@ -51,7 +51,7 @@
         </header>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="form__group-wrapper">
-            <fieldset class="form__group form__group--introduce">
+            <fieldset class="form__group form__group--field-name">
               <legend class="form__legend headline">Представьтесь:</legend>
               <label class="form__label">
                 <span class="form__label-text caption">ИМЯ*:</span>
@@ -69,7 +69,7 @@
                   placeholder="Ваше отчество (если есть)" value="Викторович">
               </label>
             </fieldset>
-            <fieldset class="form__group form__group--contact">
+            <fieldset class="form__group form__group--field-contact">
               <legend class="form__legend headline">Контактная информация:</legend>
               <label class="form__label form__label--with-icon form__label--with-icon-tel">
                 <span class="form__label-text caption">Контактный телефон*:</span>
@@ -83,9 +83,9 @@
               </label>
             </fieldset>
           </div>
-          <fieldset class="form__group form__group--impression">
+          <fieldset class="form__group form__group--radio">
             <legend class="form__legend headline">Ваше общее впечатление:</legend>
-            <ul class="form__list">
+            <ul class="form__list form__list--with-radio">
               <li class="form__item">
                 <label class="control headline headline--non-upper">
                   <input class="visually-hidden control__input" type="radio" name="impression" value="positive" checked>
@@ -100,8 +100,8 @@
                   <span class="control__label">Скорее отрицательное</span>
                 </label>
               </li>
-              <li class="form__item">
-                <label class="control headline headline--non-upper">
+              <li class="form__item form__item--shortish">
+                <label class="control control--shortish headline headline--non-upper">
                   <input class="visually-hidden control__input" type="radio" name="impression" value="difficulty">
                   <span class="control__mark"></span>
                   <span class="control__label">Затрудняюсь ответить</span>
@@ -109,32 +109,32 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group form__group--attraction">
+          <fieldset class="form__group form__group--checkbox">
             <legend class="form__legend headline">посещенные достопримечательности:</legend>
-            <ul class="form__list">
+            <ul class="form__list form__list--with-checkbox">
               <li class="form__item form__item--with-checkbox">
-                <label class="control headline headline--non-upper">
+                <label class="control control--shortish headline headline--non-upper">
                   <input class="visually-hidden control__input" type="checkbox" name="devil's-bridge" checked>
                   <span class="control__mark"></span>
                   <span class="control__label">Мост Дьявола</span>
                 </label>
               </li>
               <li class="form__item form__item--with-checkbox">
-                <label class="control headline headline--non-upper">
+                <label class="control control--shortish headline headline--non-upper">
                   <input class="visually-hidden control__input" type="checkbox" name="mount-bell" checked>
                   <span class="control__mark"></span>
                   <span class="control__label">Гора-Колокол</span>
                 </label>
               </li>
               <li class="form__item form__item--with-checkbox">
-                <label class="control headline headline--non-upper">
+                <label class="control control--shortish headline headline--non-upper">
                   <input class="visually-hidden control__input" type="checkbox" name="slide-park" checked>
                   <span class="control__mark"></span>
                   <span class="control__label">Слайд-парк</span>
                 </label>
               </li>
               <li class="form__item form__item--with-checkbox">
-                <label class="control headline headline--non-upper">
+                <label class="control control--shortish headline headline--non-upper">
                   <input class="visually-hidden control__input" type="checkbox" name="red-rocks">
                   <span class="control__mark"></span>
                   <span class="control__label">Красные скалы</span>
@@ -142,7 +142,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--textarea">
             <legend class="form__legend headline">Опишите свои эмоции:</legend>
             <label class="visually-hidden" for="feedback-comment">Пишите всё, что пожелаете.</label>
             <textarea class="form__field field field--textarea headline headline--non-upper" id="feedback-comment"
@@ -157,7 +157,7 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <p class="main-footer__component hashtag headline headline--major" lang="en">#VISITSEDONA</p>
+        <p class="main-footer__component hashtag headline" lang="en">#VISITSEDONA</p>
         <ul class="main-footer__component social">
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy">

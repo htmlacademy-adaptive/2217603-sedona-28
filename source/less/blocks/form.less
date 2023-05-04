@@ -1,7 +1,5 @@
 // .form {
-//   @media (min-width: @tablet-width) {
-//    padding: 0 60px;
-//   }
+//
 // }
 
 .form__group-wrapper {
@@ -20,7 +18,16 @@
       height: 100%;
       width: 1px;
       background-color: @color-background-after;
+
+      @media (min-width: @desktop-width) {
+        left: 493px;
+        transform: none;
+      }
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 56px;
   }
 }
 
@@ -37,6 +44,10 @@
     margin-bottom: 48px;
   }
 
+  @media (min-width: @desktop-width) {
+    margin-bottom: 56px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -48,12 +59,17 @@
 
     @media (min-width: @tablet-width) {
       top: -40px;
-      background: linear-gradient(to right, @color-grey-hover 123px, transparent 123px, transparent 525px, @color-grey-hover 525px);
+      background: linear-gradient(to right, @color-background-after 123px, transparent 123px, transparent 525px, @color-background-after 525px);
+    }
+
+    @media (min-width: @desktop-width) {
+      background: linear-gradient(to right, @color-background-after 280px, transparent 280px, transparent 680px, @color-background-after 680px);
     }
   }
 
-  &--introduce {
+  &--field-name {
     margin-bottom: 15px;
+    gap: 16px;
 
     &::before {
       @media (min-width: @tablet-width) {
@@ -62,8 +78,9 @@
     }
   }
 
-  &--contact {
+  &--field-contact {
     margin-bottom: 10px;
+    gap: 16px;
 
     &::before {
       @media (min-width: @tablet-width) {
@@ -72,16 +89,24 @@
     }
   }
 
-  &--impression {
+  &--radio {
     @media (min-width: @tablet-width) {
       padding: 0 36px;
     }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 53px;
+    }
   }
 
-  &--attraction {
+  &--checkbox {
     @media (min-width: @tablet-width) {
       margin-bottom: 42px;
       padding: 0 84px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 44px;
     }
 
     &::before {
@@ -90,6 +115,12 @@
       @media (min-width: @tablet-width) {
         top: -54px;
       }
+    }
+  }
+
+  &--textarea {
+    @media (min-width: @desktop-width) {
+      margin-bottom: 48px;
     }
   }
 }
@@ -112,11 +143,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 16px;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
 
   &--with-icon {
     position: relative;
@@ -147,6 +173,10 @@
   @media (min-width: @tablet-width) {
     width: 280px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+  }
 }
 
 .form__label-text {
@@ -159,31 +189,48 @@
 
 .form__list {
   .list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    &--with-checkbox {
+      gap: 16px 32px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--with-radio {
+      padding: 17px 0;
+      gap: 28px;
+    }
+
+    &--with-checkbox {
+      padding: 31px 0;
+      gap: 64px;
+    }
   }
 }
 
 .form__item {
   width: 100%;
   max-width: 280px;
-  margin-bottom: 16px;
 
   @media (min-width: @tablet-width) {
-    &:nth-child(2n-1) {
-      margin-right: 16px;
-    }
-
     &--with-checkbox {
       max-width: 224px;
+      width: fit-content;
     }
   }
 
-  &:last-of-type {
-    margin-bottom: 0;
+  @media (min-width: @desktop-width) {
+    &--shortish {
+      max-width: 238px;
+    }
   }
 }
 
@@ -191,12 +238,16 @@
   padding: 0 20px;
   display: flex;
   flex-direction: column;
+  max-width: 648px;
+  margin: 0 auto;
+
 
   @media (min-width: @tablet-width) {
     padding: 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 768px;
   }
 }
 
