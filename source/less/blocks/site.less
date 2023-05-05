@@ -70,25 +70,25 @@
   }
 
   &--current a {
+    @media (min-width: @tablet-width) {
+      color: @color-brown;
+      background-color: transparent;
+    }
+
     &:hover {
       background-color: @color-blue;
+
+      @media (min-width: @tablet-width) {
+        background-color: transparent;
+        color: @color-brown;
+      }
     }
 
     &:active {
       background-color: @color-blue;
       color: @color-white;
-    }
 
-    @media (min-width: @tablet-width) {
-      color: @color-brown;
-      background-color: transparent;
-
-      &:hover {
-        background-color: transparent;
-        color: @color-brown;
-      }
-
-      &:active {
+      @media (min-width: @tablet-width) {
         background-color: transparent;
         color: @color-brown;
       }
@@ -123,8 +123,7 @@
 
     @media (min-width: @tablet-width) {
       background-color: transparent;
-      color: @color-black;
-      opacity: 0.3;
+      color: rgba(0, 0, 0, 0.3);
     }
   }
 }

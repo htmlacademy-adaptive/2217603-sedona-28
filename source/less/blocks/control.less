@@ -8,7 +8,9 @@
   padding-left: 46px;
 
   &--shortish {
-    padding-right: 0;
+    @media (min-width: @desktop-width) {
+      padding-right: 0;
+    }
   }
 }
 

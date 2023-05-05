@@ -17,9 +17,11 @@
         <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
       </a>
       <nav class="main-nav">
+        <!-- Чтобы изменить кнопку с крестика на бургер - добавить кнопке класс "main-nav__toggle--closed" -->
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Закрыть меню.</span>
         </button>
+        <!-- Чтобы закрыть мобильное меню - добавить списку класс "site--closed" -->
         <ul class="main-nav__list site">
           <li class="site__item">
             <a class="site__link" href="index.html">Главная</a>
@@ -51,7 +53,8 @@
         </header>
         <ul class="multimedia__list">
           <li class="multimedia__item multimedia-card multimedia-card--bigger caption">
-            <img class="multimedia-card__image multimedia-card__image--bigger" src="img/multimedia/photo-1-mobile.jpg" width="280" height="280"
+            <img class="multimedia-card__image multimedia-card__image--bigger" src="img/multimedia/photo-1-mobile.jpg"
+              width="280" height="280"
               alt="Асфальтированная дорога идет вдаль, на горизонте горы с плоскими вершинами, светит закатное солнце.">
             <div class="multimedia-card__description multimedia-card__description--bigger">
               <div class="multimedia-card__description-note">
@@ -117,13 +120,11 @@
         </ul>
       </section>
       <section class="video-show">
-        <div class="video-show__header">
-          <h2 class="video-show__title headline">Все еще сомневаетесь?</h2>
-          <p class="video-show__text caption">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-            очередной раз!</p>
-        </div>
+        <h2 class="video-show__title headline">Все еще сомневаетесь?</h2>
+        <p class="video-show__text caption">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной раз!</p>
         <a class="video-show__link" href="#">
-          <img src="img/multimedia/video-mobile.jpg" width="280" height="177" alt="">
+          <img class="video-show__image" src="img/multimedia/video-mobile.jpg" width="280" height="177" alt="">
         </a>
       </section>
     </main>
