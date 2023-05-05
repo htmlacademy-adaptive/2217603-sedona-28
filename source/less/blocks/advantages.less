@@ -1,16 +1,30 @@
 .advantages {
   text-align: center;
   padding-top: 32px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 48px;
+  }
 }
 
 .advantages__header {
-  // max-width: 284px;
   margin: 0 auto 32px;
+  max-width: 284px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 520px;
+    margin-bottom: 55px;
+  }
 }
 
 .advantages__slogan {
   margin: 0;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 27px;
+  }
 }
 
 .advantages__intro {
@@ -19,47 +33,105 @@
 
 .advantages__list {
   .list-reset;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .advantages__item {
   background-color: @color-beige;
   padding: 24px 0;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 
   &--illustrated {
     background-color: @color-blue;
     color: @color-white;
     padding: 37px 0 0;
+
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 256px;
+      padding: 0;
+      grid-column: span 3;
+    }
+  }
+
+  &--big-advantage {
+    @media (min-width: @tablet-width) {
+      grid-template-rows: 256px 330px;
+    }
   }
 }
 
-// не надо .advantages__item + .advantages__item {
-//   margin-top: 24px;
-// }
+.advantages__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 268px;
+  margin: 0 auto;
 
-// .advantages__item-wrapper {
-//   padding решить вопрос
-// }
+  @media (min-width: @tablet-width) {
+    padding: 52px 33px 31px;
+    max-width: 256px;
+    max-height: 256px;
 
-// wrapper вокруг 3х adv-item{
-// padding: 24px 18px 28px;
-// }
+    &--basic {
+      padding: 41px 33px;
+    }
+  }
 
+  @media (min-width: @desktop-width) {
+    padding: 52px 50px 51px;
+    max-width: 400px;
+    max-height: 256px;
+
+    &--basic {
+      padding: 52px 50px;
+    }
+  }
+}
 
 .advantages__title {
-  margin: 0;
-  margin-bottom: 11px;
+  margin: 0 auto 11px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 12px;
+    max-width: 150px;
+  }
 }
 
 .advantages__number {
-  margin: 0;
+  margin: 0 auto 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .advantages__description {
   margin: 0;
-  margin-top: 17px;
 }
 
 .advantages__image {
-  display: flex;
-  // margin-top: 40px или 37px;
+  display: block;
+  margin: 40px auto 0;
+
+  @media (min-width: @tablet-width) {
+    grid-column: span 2;
+    margin: 0;
+    width: 100%;
+
+    &--ahead {
+      grid-column: 1 span 2;
+      grid-row: 1;
+    }
+  }
 }

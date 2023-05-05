@@ -4,7 +4,14 @@
   cursor: pointer;
   width: 100%;
   max-width: 280px;
-  padding: 10px 0 10px 46px;
+  padding: 10px;
+  padding-left: 46px;
+
+  &--shortish {
+    @media (min-width: @desktop-width) {
+      padding-right: 0;
+    }
+  }
 }
 
 .control__mark {

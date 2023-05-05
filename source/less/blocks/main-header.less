@@ -1,8 +1,21 @@
 .main-header {
   .font(700; 14px; 21px);
   text-transform: uppercase;
+  min-height: 56px;
 }
 
 .main-header__logo {
-  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: -40px;
+
+  @media (min-width: @tablet-width) {
+    z-index: 1;
+  }
 }
+
+// .main-header__nav {
+
+// }

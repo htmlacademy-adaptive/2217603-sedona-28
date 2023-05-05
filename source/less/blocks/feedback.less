@@ -1,15 +1,43 @@
 .feedback {
   padding: 36px 0 22px;
+
+  @media (min-width: @tablet-width) {
+    padding: 64px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 115px 120px 64px;
+  }
 }
 
 .feedback__header {
+  max-width: 320px;
+  padding: 0 20px;
   text-align: center;
-  margin-bottom: 28px;
+  margin: 0 auto 28px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 476px;
+    margin-bottom: 108px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 68px;
+  }
 }
 
 .feedback__title {
   margin: 0;
   margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    .font(700,30px,26px);
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 31px;
+  }
 }
 
 .feedback__description {
