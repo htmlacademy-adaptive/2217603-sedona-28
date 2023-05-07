@@ -14,14 +14,13 @@
   <div class="container">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
-        <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
+        <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
-      <nav class="main-nav">
-        <!-- Чтобы изменить кнопку с крестика на бургер - добавить кнопке класс "main-nav__toggle--closed" -->
+      <!-- При отключенном js - отработает класс main-nav--nojs. Открытое меню - main-nav--opened. Закрытое меню - main-nav--closed-->
+      <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Закрыть меню.</span>
         </button>
-        <!-- Чтобы закрыть мобильное меню - добавить списку класс "site--closed" -->
         <ul class="main-nav__list site">
           <li class="site__item">
             <a class="site__link" href="index.html">Главная</a>
@@ -238,6 +237,7 @@
       </section>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

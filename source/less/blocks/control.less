@@ -12,6 +12,27 @@
       padding-right: 0;
     }
   }
+
+  &:focus-within {
+    outline-offset: 3px;
+    outline: auto;
+  }
+
+  &:hover .control__mark {
+    background-color: @color-grey-hover;
+  }
+
+  &:active .control__mark {
+    background-color: @color-grey-active;
+  }
+
+  &:active .control__mark::before {
+    opacity: 0.3;
+  }
+
+  &:disabled .control-mark {
+    opacity: 0.5;
+  }
 }
 
 .control__mark {

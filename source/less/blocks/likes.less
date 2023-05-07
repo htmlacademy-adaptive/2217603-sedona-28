@@ -4,9 +4,23 @@
   align-items: flex-end;
   gap: 14px;
   max-width: 70px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     align-items: center;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-within {
+    outline: auto;
+    outline-offset: 2px;
   }
 }
 
@@ -22,6 +36,10 @@
   background-position: center;
   margin-bottom: 5px;
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .likes__number {
