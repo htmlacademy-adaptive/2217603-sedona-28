@@ -1,8 +1,8 @@
 .field {
   font-family: inherit;
   width: 100%;
-  padding: 16px;
-  border: none;
+  padding: 12px;
+  border: 4px solid transparent;
   border-radius: 0;
   color: @color-black;
   background-color: @color-grey;
@@ -23,5 +23,20 @@
       max-width: 768px;
       margin-bottom: 0;
     }
+  }
+
+  &:hover {
+    background-color: @color-grey-hover;
+  }
+
+  &:active {
+    background-color: @color-white;
+    border-color: @color-grey-hover;
+  }
+
+  &:disabled {
+    background-color: @color-grey-hover;
+    color: @color-white;
+    opacity: 0.5;
   }
 }

@@ -4,7 +4,42 @@
   left: 0;
   width: 100%;
 
+  &--closed {
+    .main-nav__toggle {
+      background-image: url("/img/icons/burger-menu.svg");
+    }
+  }
+
+  &--opened {
+    .main-nav__toggle {
+      background-image: url("/img/icons/cross.svg");
+    }
+  }
+
   @media (min-width: @tablet-width) {
+    position: relative;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs.main-nav {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .site__item {
+    display: block;
+  }
+
+  .main-header__logo + .main-nav--nojs {
     position: relative;
   }
 }
@@ -17,17 +52,12 @@
   height: 22px;
   border: none;
   background-color: transparent;
-  background-image: url("/img/icons/cross.svg");
   background-repeat: no-repeat;
   background-position: center;
   padding: 0;
   cursor: pointer;
   z-index: 1;
-
-  &--closed {
-    background-color: transparent;
-    background-image: url("/img/icons/burger-menu.svg");
-  }
+  outline-offset: 3px;
 
   &:hover {
     opacity: 0.6;
