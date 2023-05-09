@@ -1,9 +1,10 @@
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   width: 100%;
   min-height: 389px;
+  text-align: center;
   background-color: @color-dark;
   background-image: url("/img/hero/hero-back-mobile.jpg");
   background-size: cover;
@@ -27,5 +28,20 @@
     @media (min-width: @desktop-width) {
       min-height: 301px;
     }
+  }
+}
+
+.hero__image {
+  display: inline-block;
+  width: 88%;
+  max-width: 460px;
+  margin: 90px auto 85px;
+
+  @media (min-width: @tablet-width) {
+    margin: 77px auto 91px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 78px auto 90px;
   }
 }
