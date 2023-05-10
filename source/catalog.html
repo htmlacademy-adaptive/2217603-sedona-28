@@ -44,7 +44,8 @@
     <main class="page-main page-main--inner">
       <h1 class="visually-hidden">Добро пожаловать на страницу фото и видео!</h1>
       <div class="hero hero--inner">
-        <img class="hero__image" src="img/hero/hero-sedona.svg" width="229" height="39" alt="Надпись Седона.">
+        <img class="hero__image hero__image--inner" src="img/hero/hero-sedona.svg" width="229" height="39"
+          alt="Надпись Седона.">
       </div>
       <section class="multimedia">
         <header class="multimedia__header">
@@ -54,9 +55,15 @@
         </header>
         <ul class="multimedia__list">
           <li class="multimedia__item multimedia-card multimedia-card--bigger caption">
-            <img class="multimedia-card__image multimedia-card__image--bigger" src="img/multimedia/photo-1-mobile.jpg"
-              width="280" height="280"
-              alt="Асфальтированная дорога идет вдаль, на горизонте горы с плоскими вершинами, светит закатное солнце.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/multimedia/photo-1-desktop.jpg 1x, img/multimedia/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/multimedia/photo-1-tablet.jpg 1x, img/multimedia/photo-1-tablet@2x.jpg 2x">
+              <img class="multimedia-card__image multimedia-card__image--bigger" src="img/multimedia/photo-1-mobile.jpg"
+                width="280" height="280" srcset="img/multimedia/photo-1-mobile@2x.jpg 2x"
+                alt="Асфальтированная дорога идет вдаль, на горизонте горы с плоскими вершинами, светит закатное солнце.">
+            </picture>
             <div class="multimedia-card__description multimedia-card__description--bigger">
               <div class="multimedia-card__description-note">
                 <h3 class="multimedia-card__title caption caption--bold">неродные просторы</h3>
@@ -71,8 +78,15 @@
             </div>
           </li>
           <li class="multimedia__item multimedia-card caption">
-            <img class="multimedia-card__image" src="img/multimedia/photo-2-mobile.jpg" width="280" height="280"
-              alt="Ветвистый кактус с мелкими желтыми цветочками, на заднем фоне красные горы.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/multimedia/photo-2-desktop.jpg 1x, img/multimedia/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/multimedia/photo-2-tablet.jpg 1x, img/multimedia/photo-2-tablet@2x.jpg 2x">
+              <img class="multimedia-card__image" src="img/multimedia/photo-2-mobile.jpg" width="280" height="280"
+                srcset="img/multimedia/photo-2-mobile@2x.jpg 2x"
+                alt="Ветвистый кактус с мелкими желтыми цветочками, на заднем фоне красные горы.">
+            </picture>
             <div class="multimedia-card__description">
               <div class="multimedia-card__description-note">
                 <h3 class="multimedia-card__title caption caption--bold">Местная растительность</h3>
@@ -87,8 +101,15 @@
             </div>
           </li>
           <li class="multimedia__item multimedia-card caption">
-            <img class="multimedia-card__image" src="img/multimedia/photo-3-mobile.jpg" width="280" height="280"
-              alt="Извилистая дорога вверх в гору, среди густого хвойного леса.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/multimedia/photo-3-desktop.jpg 1x, img/multimedia/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/multimedia/photo-3-tablet.jpg 1x, img/multimedia/photo-3-tablet@2x.jpg 2x">
+              <img class="multimedia-card__image" src="img/multimedia/photo-3-mobile.jpg" width="280" height="280"
+                srcset="img/multimedia/photo-3-mobile@2x.jpg 2x"
+                alt="Извилистая дорога вверх в гору, среди густого хвойного леса.">
+            </picture>
             <div class="multimedia-card__description multimedia-card__description--dark">
               <div class="multimedia-card__description-note">
                 <h3 class="multimedia-card__title caption caption--bold">Дорога на север</h3>
@@ -103,8 +124,14 @@
             </div>
           </li>
           <li class="multimedia__item multimedia-card caption">
-            <img class="multimedia-card__image" src="img/multimedia/photo-4-mobile.jpg" width="280" height="280"
-              alt="Узкий каменный мост над расщелиной.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/multimedia/photo-4-desktop.jpg 1x, img/multimedia/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/multimedia/photo-4-tablet.jpg 1x, img/multimedia/photo-4-tablet@2x.jpg 2x">
+              <img class="multimedia-card__image" src="img/multimedia/photo-4-mobile.jpg" width="280" height="280"
+                srcset="img/multimedia/photo-4-mobile@2x.jpg 2x" alt="Узкий каменный мост над расщелиной.">
+            </picture>
             <div class="multimedia-card__description">
               <div class="multimedia-card__description-note">
                 <h3 class="multimedia-card__title caption caption--bold">Мост дьявола</h3>
@@ -125,7 +152,14 @@
         <p class="video-show__text caption">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
           очередной раз!</p>
         <a class="video-show__link" href="#">
-          <img class="video-show__image" src="img/multimedia/video-mobile.jpg" width="280" height="177" alt="">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/multimedia/video-desktop.jpg 1x, img/multimedia/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/multimedia/video-tablet.jpg 1x, img/multimedia/video-tablet@2x.jpg 2x">
+            <img class="video-show__image" src="img/multimedia/video-mobile.jpg" width="280" height="177"
+              srcset="img/multimedia/video-mobile@2x.jpg 2x" alt="">
+          </picture>
         </a>
       </section>
     </main>
