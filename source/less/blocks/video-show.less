@@ -51,13 +51,7 @@
 
 .video-show__link {
   display: inline-block;
-  // min-height: 177px;
-  // max-width: 800px;
   margin: 0 auto;
-
-  // @media (min-width: @tablet-width) {
-  //   min-height: 500px;
-  // }
 
   &:hover {
     box-shadow: 0 0 3px 3px @color-blue;
@@ -70,4 +64,10 @@
 
 .video-show__image {
   display: block;
+  min-height: 177px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 500px;
+    width: auto;
+  }
 }

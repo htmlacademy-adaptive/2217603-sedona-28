@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона - славный городок</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,7 +21,7 @@
       <!-- При отключенном js - отработает класс main-nav--nojs. Открытое меню - main-nav--opened. Закрытое меню - main-nav--closed-->
       <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Закрыть меню.</span>
+          <span class="visually-hidden">Открыть меню.</span>
         </button>
         <ul class="main-nav__list site">
           <li class="site__item site__item--current">
@@ -42,8 +44,8 @@
     <main class="page-main">
       <h1 class="visually-hidden">Добро пожаловать в великолепную Седону!</h1>
       <div class="hero">
-        <img class="hero__image" src="img/hero/hero-text.svg" width="320" height="389"
-          alt="Потому что Гранд Каньон отстой!">
+        <img class="hero__image" src="img/hero/hero-text.svg" width="282" height="214"
+          alt="Добро пожаловать в великолепную Седону! Потому что Гранд Каньон отстой!">
       </div>
       <section class="advantages">
         <header class="advantages__header">
@@ -58,8 +60,17 @@
               <p class="advantages__description caption caption--contrast">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ
                 СВОЯ ЖИЗНЬ</p>
             </div>
-            <img class="advantages__image" src="img/advantages/photo-city-mobile.jpg" width="320" height="260"
-              alt="Кафе в окружении зеленых листьев на фоне гор, на стене - американский флаг.">
+            <div class="advantages__image-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/advantages/adv-city-desktop.jpg 1x, img/advantages/adv-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/advantages/adv-city-tablet.jpg 1x, img/advantages/adv-city-tablet@2x.jpg 2x">
+                <img class="advantages__image" src="img/advantages/adv-city-mobile.jpg" width="320" height="260"
+                  srcset="img/advantages/adv-city-mobile@2x.jpg 2x"
+                  alt="Кафе в окружении зеленых листьев на фоне гор, на стене - американский флаг.">
+              </picture>
+            </div>
             <div class="advantages__block services">
               <ul class="services__list">
                 <li class="services__item services__item--housing">
@@ -84,8 +95,16 @@
               <p class="advantages__description caption caption--contrast">Да, по нему можно пройти! Если вы осмелитесь,
                 конечно</p>
             </div>
-            <img class="advantages__image advantages__image--ahead" src="img/advantages/photo-bridge-mobile.jpg"
-              width="320" height="260" alt="Узкий каменный мост над расщелиной.">
+            <div class="advantages__image-wrapper advantages__image-wrapper--ahead">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/advantages/adv-bridge-desktop.jpg 1x, img/advantages/adv-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/advantages/adv-bridge-tablet.jpg 1x, img/advantages/adv-bridge-tablet@2x.jpg 2x">
+                <img class="advantages__image" src="img/advantages/adv-bridge-mobile.jpg" width="320" height="260"
+                  srcset="img/advantages/adv-bridge-mobile@2x.jpg 2x" alt="Узкий каменный мост над расщелиной.">
+              </picture>
+            </div>
           </li>
           <li class="advantages__item">
             <div class="advantages__item-wrapper advantages__item-wrapper--basic">
