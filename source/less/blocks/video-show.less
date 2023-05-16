@@ -50,6 +50,7 @@
 }
 
 .video-show__link {
+  position: relative;
   display: inline-block;
   margin: 0 auto;
 
@@ -70,4 +71,18 @@
     min-height: 500px;
     width: auto;
   }
+}
+
+.video-show__link-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 54px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  background-image: url("../img/sprite.svg#video-triangle");
+  background-repeat: no-repeat;
 }

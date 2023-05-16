@@ -9,7 +9,7 @@
 }
 
 .advantages__header {
-  margin: 0 auto 32px;
+  margin: 0 auto 16px;
   max-width: 284px;
 
   @media (min-width: @tablet-width) {
@@ -44,6 +44,15 @@
   background-color: @color-beige;
   padding: 24px 0;
   overflow: hidden;
+
+  @media (max-width: @mobile-width-only) {
+    &:first-child {
+      padding-top: 70px;
+      background-image: url("../img/icons/divider-mini.svg");
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding: 0;
