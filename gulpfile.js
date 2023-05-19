@@ -8,8 +8,8 @@ import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
-import del from 'del';
+import { stacksvg } from "gulp-stacksvg"
+import {deleteAsync} from 'del';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 
@@ -70,10 +70,17 @@ const createWebp = () => {
 
 // SVG
 
-const svg = () =>
-  gulp.src('source/img/*.svg')
+const svg = () => {
+  return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
+}
+
+const stack = () => {
+  return gulp.src('source/img/icons/*.svg')
+  .pipe(stacksvg({ output: `sprite` }))
+  .pipe(gulp.dest('build/img'));
+}
 
 // Copy
 
@@ -81,7 +88,8 @@ const copy = (done) => {
   gulp.src([
   'source/fonts/*.{woff2,woff}',
   'source/*.ico',
-  'source/*.webmanifest'
+  'source/*.webmanifest',
+  'source/img/favicons/*.{svg,png}'
   ], {
   base: 'source'
   })
@@ -89,11 +97,11 @@ const copy = (done) => {
   done();
 }
 
-// Clean
+//Clean
 
 const clean = () => {
-  return del('build');
-};
+  return deleteAsync('build');
+}
 
 // Server
 
@@ -136,6 +144,7 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
+    stack,
     createWebp
   ),
 );
@@ -151,6 +160,7 @@ export default gulp.series(
     html,
     scripts,
     svg,
+    stack,
     createWebp
   ),
   gulp.series(

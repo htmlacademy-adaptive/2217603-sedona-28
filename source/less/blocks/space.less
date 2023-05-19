@@ -1,0 +1,15 @@
+.space::after {
+  content: "\A";
+
+  &--mobile {
+    @media (min-width: 320px) {
+      white-space: pre;
+    }
+  }
+
+  &--tablet {
+    @media (min-width: @tablet-width) {
+      white-space: pre;
+    }
+  }
+}
