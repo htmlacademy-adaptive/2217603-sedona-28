@@ -4,8 +4,10 @@
   color: @color-dark;
 
   &--signature {
-    font-size: 12px;
-    opacity: 0.6;
+    @media (max-width: @mobile-width-only) {
+      font-size: 12px;
+      opacity: 0.6;
+    }
   }
 
   &--bold {

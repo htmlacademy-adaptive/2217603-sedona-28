@@ -9,7 +9,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import { stacksvg } from "gulp-stacksvg"
-import {deleteAsync} from 'del';
+import del from 'del';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 
@@ -97,11 +97,11 @@ const copy = (done) => {
   done();
 }
 
-//Clean
+// Clean
 
 const clean = () => {
-  return deleteAsync('build');
-}
+  return del('build');
+};
 
 // Server
 

@@ -1,14 +1,22 @@
-.space::after {
-  content: "\A";
+.space {
+  &::after {
+    content: "\A";
+  }
 
-  &--mobile {
-    @media (min-width: 320px) {
+  &--mobile::after {
+    @media (max-width: @tablet-width) {
       white-space: pre;
     }
   }
 
-  &--tablet {
-    @media (min-width: @tablet-width) {
+  &--tablet::after {
+    @media (max-width: @desktop-width) {
+      white-space: pre;
+    }
+  }
+
+  &--desktop::after {
+    @media (min-width: @desktop-width) {
       white-space: pre;
     }
   }
