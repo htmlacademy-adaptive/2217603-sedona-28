@@ -1,0 +1,23 @@
+.space {
+  &::after {
+    content: "\A";
+  }
+
+  &--mobile::after {
+    @media (max-width: @tablet-width) {
+      white-space: pre;
+    }
+  }
+
+  &--tablet::after {
+    @media (max-width: @desktop-width) {
+      white-space: pre;
+    }
+  }
+
+  &--desktop::after {
+    @media (min-width: @desktop-width) {
+      white-space: pre;
+    }
+  }
+}

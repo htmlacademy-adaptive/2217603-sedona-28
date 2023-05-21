@@ -1,10 +1,14 @@
 .advantages {
   text-align: center;
-  padding-top: 32px;
+  padding-top: 33px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     padding-top: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 58px;
   }
 }
 
@@ -16,14 +20,23 @@
     max-width: 520px;
     margin-bottom: 55px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .advantages__slogan {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
+  padding-inline: 10px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 29px;
   }
 }
 
@@ -42,13 +55,13 @@
 
 .advantages__item {
   background-color: @color-beige;
-  padding: 24px 0;
+  padding: 25px 0;
   overflow: hidden;
 
   @media (max-width: @mobile-width-only) {
     &:first-child {
       padding-top: 70px;
-      background-image: url("../img/icons/divider-mini.svg");
+      background-image: url("../img/hero/divider-mini.svg");
       background-repeat: no-repeat;
       background-position: top center;
     }
@@ -61,7 +74,7 @@
   &--illustrated {
     background-color: @color-blue;
     color: @color-white;
-    padding: 37px 0 0;
+    padding: 38px 0 0;
 
     @media (min-width: @tablet-width) {
       display: grid;
@@ -98,13 +111,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 52px 50px 51px;
+    padding: 52px 50px;
     max-width: 400px;
     max-height: 256px;
-
-    &--basic {
-      padding: 52px 50px;
-    }
   }
 }
 
@@ -112,7 +121,7 @@
   margin: 0 auto 11px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     max-width: 150px;
   }
 }
@@ -131,7 +140,7 @@
 
 .advantages__image {
   display: block;
-  margin: 40px auto 0;
+  margin: 37px auto 0;
 
   @media (min-width: @tablet-width) {
     width: 100%;
