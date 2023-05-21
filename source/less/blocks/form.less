@@ -1,13 +1,10 @@
-// .form {
-//
-// }
-
 .form__group-wrapper {
   @media (min-width: @tablet-width) {
     position: relative;
     display: flex;
     justify-content: space-between;
     margin-bottom: 48px;
+    padding-top: 7px;
 
     &::after {
       content: "";
@@ -20,7 +17,7 @@
       background-color: @color-background-after;
 
       @media (min-width: @desktop-width) {
-        left: 493px;
+        left: 480px;
         transform: none;
       }
     }
@@ -38,7 +35,6 @@
   margin: 0;
   padding: 0 20px 24px;
   border: none;
-  // border-top: 1px solid @color-grey-hover;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -53,7 +49,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -70px;
+    top: -71px;
     left: 0;
     width: 100%;
     height: 1px;
@@ -65,20 +61,22 @@
   }
 
   &--field-name {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     gap: 16px;
 
     @media (min-width: @tablet-width) {
       border-top: none;
+      width: 295px;
     }
   }
 
   &--field-contact {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     gap: 16px;
 
     @media (min-width: @tablet-width) {
       border-top: none;
+      width: 295px;
     }
   }
 
@@ -94,12 +92,13 @@
 
   &--checkbox {
     @media (min-width: @tablet-width) {
-      margin-bottom: 42px;
       padding: 0 84px;
+      margin-bottom: 42px;
     }
 
     @media (min-width: @desktop-width) {
       padding: 0 44px;
+      margin-bottom: 55px;
     }
 
     &::before {
@@ -167,11 +166,11 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 280px;
+    min-width: 280px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 430px;
+    min-width: 430px;
   }
 }
 
@@ -215,7 +214,6 @@
   &--with-checkbox {
     @media (min-width: @tablet-width) {
       max-width: 224px;
-      width: 100%;
     }
 
     @media (min-width: @desktop-width) {
@@ -236,7 +234,7 @@
   flex-direction: column;
   max-width: 648px;
   margin: 0 auto;
-
+  gap: 5px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -264,5 +262,6 @@
 
   @media (min-width: @tablet-width) {
     align-self: center;
+    margin-top: 7px;
   }
 }

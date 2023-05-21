@@ -1,8 +1,19 @@
 .map {
   margin-bottom: 8px;
+  background-image: url("../img/map/map-mobile.jpg");
+  min-width: 320px;
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
+    background-image: url("../img/map/map-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/map/map-desktop.jpg");
   }
 
   iframe {
