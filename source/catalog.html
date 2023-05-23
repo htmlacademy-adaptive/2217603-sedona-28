@@ -175,25 +175,27 @@
         <h2 class="video-show__title headline">Все еще сомневаетесь?</h2>
         <p class="video-show__text caption">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
           очередной раз!</p>
-        <a class="video-show__link" href="#">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/multimedia/video-desktop.webp 1x, img/multimedia/video-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/multimedia/video-tablet.webp 1x, img/multimedia/video-tablet@2x.webp 2x">
-            <source type="image/webp"
-              srcset="img/multimedia/video-mobile.webp 1x, img/multimedia/video-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)"
-              srcset="img/multimedia/video-desktop.jpg 1x, img/multimedia/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/multimedia/video-tablet.jpg 1x, img/multimedia/video-tablet@2x.jpg 2x">
-            <img class="video-show__image" src="img/multimedia/video-mobile.jpg" width="280" height="177"
-              srcset="img/multimedia/video-mobile@2x.jpg 2x" alt="">
-          </picture>
+        <div class="video-show__link-wrapper">
+          <a class="video-show__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/multimedia/video-desktop.webp 1x, img/multimedia/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/multimedia/video-tablet.webp 1x, img/multimedia/video-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/multimedia/video-mobile.webp 1x, img/multimedia/video-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)"
+                srcset="img/multimedia/video-desktop.jpg 1x, img/multimedia/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/multimedia/video-tablet.jpg 1x, img/multimedia/video-tablet@2x.jpg 2x">
+              <img class="video-show__image" src="img/multimedia/video-mobile.jpg" width="280" height="177"
+                srcset="img/multimedia/video-mobile@2x.jpg 2x" alt="">
+            </picture>
+          </a>
           <button class="video-show__link-button" type="button">
             <span class="visually-hidden">Посмотреть видео.</span>
           </button>
-        </a>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
