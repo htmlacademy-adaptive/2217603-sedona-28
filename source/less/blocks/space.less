@@ -4,13 +4,13 @@
   }
 
   &--mobile::after {
-    @media (max-width: @tablet-width) {
+    @media (max-width: @mobile-width-only) {
       white-space: pre;
     }
   }
 
   &--tablet::after {
-    @media (max-width: @desktop-width) {
+    @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
       white-space: pre;
     }
   }

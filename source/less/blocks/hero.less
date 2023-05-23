@@ -1,10 +1,11 @@
 .hero {
   width: 100%;
   height: 389px;
+  padding: 90px 0;
   text-align: center;
   background-color: @color-dark;
   background-image: url("../img/hero/divider.svg"), url("../img/hero/hero-back-mobile.jpg");
-  background-position: bottom -1px center, bottom center;
+  background-position: bottom -0.2px center, bottom center;
   background-size: auto, cover;
   background-repeat: no-repeat, no-repeat;
 
@@ -13,6 +14,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding: 77px;
     height: 518px;
     background-image: url("../img/hero/divider.svg"), url("../img/hero/hero-back-tablet.jpg");
 
@@ -22,6 +24,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding: 78px;
     background-image: url("../img/hero/divider.svg"), url("../img/hero/hero-back-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -30,6 +33,7 @@
   }
 
   &--inner {
+    padding: 51px 0;
     height: 158px;
     background-image: url("../img/hero/divider.svg"), url("../img/hero/hero-inner-back-mobile.jpg");
 
@@ -38,6 +42,7 @@
     }
 
     @media (min-width: @tablet-width) {
+      padding: 95px;
       height: 290px;
       background-image: url("../img/hero/divider.svg"), url("../img/hero/hero-inner-back-tablet.jpg");
 
@@ -47,6 +52,7 @@
     }
 
     @media (min-width: @desktop-width) {
+      padding: 102px;
       height: 301px;
       background-image: url("../img/hero/divider.svg"), url("../img/hero/hero-inner-back-desktop.jpg");
 
@@ -61,28 +67,16 @@
   display: inline-block;
   width: 100%;
   max-width: 282px;
-  margin: 90px auto 85px;
 
   @media (min-width: @tablet-width) {
     max-width: 460px;
-    margin: 77px auto 91px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 78px auto 90px;
   }
 
   &--inner {
-    width: auto;
-    margin: 51px auto 67px;
+    max-width: 229px;
 
     @media (min-width: @tablet-width) {
-      width: 457px;
-      margin: 95px auto 117px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin: 100px auto 112px;
+      max-width: 460px;
     }
   }
 }
